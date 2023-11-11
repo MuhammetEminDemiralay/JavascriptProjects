@@ -6,3 +6,99 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f7fb;
+}
+
+.container{
+    padding: 2rem 7rem;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result_images{
+    display: flex;
+    column-gap: 7rem;
+}
+
+.container.start .user_result{
+    transform-origin: left;
+    animation: userShake 0.3s ease infinite;
+}
+
+@keyframes userShake{
+    50%{
+        transform: rotate(10deg);
+    }
+}
+
+.container.start .cpu_result{
+    transform-origin: right;
+    animation: cpuShake 0.3s ease infinite;
+}
+
+@keyframes cpuShake{
+    50%{
+        transform: rotate(-10deg);
+    }
+}
+
+.result_images img{
+    width: 100px;
+}
+
+.user_result img{
+    transform: rotate(90deg) rotateY(-180deg)
+}
+
+.cpu_result img{
+    transform: rotate(-90deg);
+}
+
+.result{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: red;
+    text-shadow: 0px 3px black;
+    margin-top: 10px;
+}
+
+.option_image img{
+    width: 50px;
+} 
+
+.option_images{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container.start .option_images{
+    pointer-events: none;
+}
+
+.option_image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.option_image:hover{
+    opacity: 1;
+}
+
+.option_image p{
+    margin-top: 10px;
+    pointer-events: none;
+}
