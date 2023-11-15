@@ -11,9 +11,7 @@ const containerGame = document.querySelector(".container"),
             userResult.src = cpuResult.src = "./images/Rock.png"
             result.textContent = "Wait..."
             optionİmages.forEach((image2, index2) => {
-               optionİmages.forEach((image2, index2) => {
                 index !== index2 && image2.classList.remove("active")
-               })
             })
             
             containerGame.classList.add("start");
@@ -46,7 +44,8 @@ const containerGame = document.querySelector(".container"),
     
                 let outComeValue = outcomes[userValue + cpuValue];
                 result.textContent = userValue === cpuValue ? "Match Draw" : outComeValue + " Won!!";
-            }, 2500)
+            }, 1000)
 
         });
     })
+
