@@ -27,7 +27,6 @@ const inputField = document.querySelector(".input-field textarea"),
                 <span class="task">${inputVal}</span>
                 <i class="uil uil-trash" onclick="deleteTask(this)"></i>
                 </li>`;
-
             todoLists.insertAdjacentHTML("beforeend", liTag);
             inputField.value = "";
         }
@@ -44,6 +43,7 @@ const inputField = document.querySelector(".input-field textarea"),
 
     function deleteTask(e){
         e.parentElement.remove();
+        console.log(e)
         allTasks();
     }
 
