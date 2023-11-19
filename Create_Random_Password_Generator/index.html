@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Random Password Generator</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 <body>
     
-    <section class="container">
-        <input type="text">
-        <input type="range">
-        <button>Generate Password</button>
-    </section>
-
+    <div class="container">
+        <div class="password-box">
+            <input type="text" placeholder="a2sd@?a2#iö">
+            <i class="uil uil-copy copy-icon"></i>
+        </div>
+        <div class="range-box">
+            <input class="range" type="range" min="6" max="16" value="10">
+            <span class="slider-number">10</span>
+        </div>
+        <button class="generate-button">Generate Password</button>
+    </div> 
 
     <script src="./script.js"></script>
 </body>
