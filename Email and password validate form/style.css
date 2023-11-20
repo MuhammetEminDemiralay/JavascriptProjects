@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0466c8;
+}
+
+.container{
+    background-color: #fff;
+    max-width: 380px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.container header{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.container form{
+    margin-top: 25px;
+}
+
+form .field{
+    margin-bottom: 20px;
+}
+
+form .input-field{
+    position: relative;
+    height: 55px;
+    width: 100%;
+}
+
+.input-field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid #8f8e8e;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.invalid input{
+    border-color: red;
+}
+
+.input-field .show-hide{
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #8f8e8e;
+}
+
+.field .error{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+
+.invalid .error{
+    display: flex;
+}
+
+.error .error-icon{
+    font-size: 16px;
+    margin-right: 3px;
+}
+
+.create-password .error{
+    align-items: flex-start;
+}
+
+.create-password .error-icon{
+    margin-top: 4px;
+}
+
+.button{
+    margin: 25px 0 6px; 
+}
+
+.button input{
+    color:#fff;
+    background-color: #1980e8;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #0360bc;
+}
