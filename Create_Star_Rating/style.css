@@ -6,3 +6,41 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #ffd670, #ff9770);
+}
+
+.raiting-box{
+    padding: 35px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.raiting-box .stars{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stars i{
+    font-size: 30px;
+    color: #e6e6e6;
+    transition: color 0.3s ease;
+}
+
+.stars i.active{
+    color: #ffd000;
+}
+
+.raiting-box header{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(112, 110, 107);
+    margin-bottom: 20px;
+}
