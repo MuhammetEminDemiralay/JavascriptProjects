@@ -1,0 +1,19 @@
+body{
+ min-height: 100vh;        
+ display: flex;
+ align-items: center;
+ justify-content: center;   
+ background-color: orange;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
+}
+
+.container .btn{
+    border: 1px solid black;
+    padding: 20px;
+}
