@@ -34,15 +34,22 @@ check.addEventListener("click", () => {
         textChances.classList.add("game-over");
         textChances.innerHTML = "Game Over";
     }
-    
+
     inputValue > randomNumber ? 
         guess.innerHTML = "you number is high" : 
         guess.innerHTML =  "you number is low";
 
     if(randomNumber == inputValue){
         textChances.innerHTML = "You win..."
+        check.classList.replace("check", "new-game");
+        check.textContent = "New Game"
         return;
-    }
-    
+    }    
+})
 
+check.addEventListener("click", () => {
+
+    if(claim === -1){
+        window.location.reload();
+    }
 })

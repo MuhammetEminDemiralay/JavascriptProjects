@@ -60,3 +60,10 @@ body{
 .danger{
     color: red;
 }
+
+.new-game{
+
+    color: #fff;
+    background-color: blue;
+    cursor: pointer;
+}
